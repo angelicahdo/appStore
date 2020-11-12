@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <FrameLayout
+        android:id="@+id/contenedorFragment"
+        android:layout_width="351dp"
+        android:layout_height="535dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+
+    </FrameLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="379dp"
+        android:layout_height="96dp"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorFragment"
+        app:layout_constraintVertical_bias="0.8"
+        app:rowCount="2">
+
+
+        <ImageButton
+            android:id="@+id/cardPromos"
+            android:layout_width="78dp"
+            android:layout_height="72dp"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="OnClick"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="0"
+            app:srcCompat="@drawable/icon_promo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center"
+             android:text="@string/Promociones"
+            android:textSize="10sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/cardFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="OnClick"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/icon_fav" />
+        <TextView
+            android:id="@+id/textVie2w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center"
+            android:text="@string/Favoritos"
+            android:textSize="10sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+
+        <ImageButton
+            android:id="@+id/cardPago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="OnClick"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/icon_pago" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center"
+            android:text="@string/Pago"
+            android:textSize="10sp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/cardMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="OnClick"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:srcCompat="@drawable/icon_menu" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center"
+            android:text="@string/Menu"
+            android:textSize="10sp"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
