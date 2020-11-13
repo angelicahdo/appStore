@@ -31,7 +31,7 @@
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:onClick="principal"
+            android:onClick="fem"
             app:srcCompat="@drawable/fem_opt" />
 
         <ImageButton

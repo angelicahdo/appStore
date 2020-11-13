@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent principal = new Intent(this, edu.unicauca.appstore.Principal.class);
         startActivity(principal);
     }
+    public void fem (View view){
+        Intent fem = new Intent(this, edu.unicauca.appstore.Femenino.class);
+        startActivity(fem);
+    }
 
 
 }
