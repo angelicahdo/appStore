@@ -25,7 +25,7 @@ public class AdapterPersona extends RecyclerView.Adapter<AdapterPersona.ViewHold
         this.listaPersona = listaPersona;
     }
 
-
+    //Carga el layout en la view y retoma la view
     @NonNull
     @Override
     public ViewHolderPersona onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -41,18 +41,19 @@ public class AdapterPersona extends RecyclerView.Adapter<AdapterPersona.ViewHold
         holder.foto.setImageResource(listaPersona.get(position).getFoto());
 
     }
-
+    //retomar el tamaño de la lista
     @Override
     public int getItemCount() {
         return listaPersona.size();
     }
 
-    public class ViewHolderPersona extends RecyclerView.ViewHolder {
 
+    public class ViewHolderPersona extends RecyclerView.ViewHolder {
+        //CREAMOS LOS OBJETOS
         TextView nombre;
         TextView precio;
         ImageView foto;
-
+        //CAPTURA LA LISTA CON EL METODO SUPER
         public ViewHolderPersona(@NonNull View itemView) {
             super(itemView);
             nombre =(TextView)itemView.findViewById(R.id.titulo_persona);

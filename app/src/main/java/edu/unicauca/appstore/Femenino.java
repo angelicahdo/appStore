@@ -22,11 +22,13 @@ public class Femenino extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_femenino);
-
+        //INICIAMOS LA LISTA
         listaPersonas = new ArrayList<>();
+        //LE INDICAMOS AL OBJETO RECYCLER CUAL ES EL ID DEL RECYCLER A INFLAR
         recyclerUsuarios = findViewById(R.id.recyclerView);
+        //PRESETA LOS DATOS EN UN LINEARLAYOUT
         recyclerUsuarios.setLayoutManager(new LinearLayoutManager(this));
-
+        //FUNCION 
         llenarPersona();
         AdapterPersona adapter = new AdapterPersona(listaPersonas);
         recyclerUsuarios.setAdapter(adapter);

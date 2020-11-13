@@ -17,6 +17,7 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                //Cuando pasan los 2 segundos , pasamos a la actividad principal
                 Intent intent = new Intent(edu.unicauca.appstore.Splash.this,MainActivity.class);
                 startActivity(intent);
                 finish();

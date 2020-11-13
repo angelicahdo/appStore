@@ -13,6 +13,7 @@
         <activity android:name=".Principal" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Splash">
+            //lanzar la app
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
