@@ -12,19 +12,20 @@ public class Principal extends AppCompatActivity {
     FragmentTransaction transaction;
 
 
-    Fragment fragPromo, fragFav, fragPago, fragMenu;
+    Fragment fragInicio, fragPromo, fragFav, fragPago, fragMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
+        fragInicio = new InicioFragment();
         fragPromo = new PromoFragment();
         fragFav = new FavoritoFragment();
         fragPago = new PagoFragment();
         fragMenu = new MenuFragment();
 
-        getSupportFragmentManager().beginTransaction().add(R.id.contenedorFragment, fragPromo).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.contenedorFragment, fragInicio).commit();
 
     }
 
@@ -32,7 +33,7 @@ public class Principal extends AppCompatActivity {
         transaction=getSupportFragmentManager().beginTransaction();
         switch (view.getId())
         {
-            case R.id.cardPromos: transaction.replace(R.id.contenedorFragment,fragPromo);
+            case R.id.cardPromos: transaction.replace(R.id.contenedorFragment,fragInicio);
                 transaction.addToBackStack(null);
                 break;
             case R.id.cardFav: transaction.replace(R.id.contenedorFragment,fragFav);

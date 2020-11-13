@@ -10,7 +10,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="368dp"
         android:layout_height="652dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,22 +20,21 @@
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="336dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FFFFFF"
         android:onClick="inicio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/atras" />
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="59dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+    <SearchView
+        android:layout_width="367dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tienda" />
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
